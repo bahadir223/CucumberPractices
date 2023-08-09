@@ -1,6 +1,7 @@
 package techproed.stepDefinition;
 
 import io.cucumber.java.en.Then;
+import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import techproed.pages.DataTablePage;
 
@@ -28,5 +29,11 @@ public class dataTableStepDefinition {
     @Then("kullanici Search bolumune girdigi {string} bilgisini girer")
     public void kullaniciSearchBolumuneGirdigiBilgisiniGirer(String str) {
         page.search.sendKeys(str);
+    }
+
+    @Then("kullanici {string} ile basarili giris yapildigini dogrular")
+    public void kullaniciIleBasariliGirisYapildiginiDogrular(String str) {
+        Assert.assertTrue(page.searchVerify.getText().contains(str));
+
     }
 }

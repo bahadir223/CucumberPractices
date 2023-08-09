@@ -11,12 +11,15 @@ Feature: US004 DataTables Sayfasi Testi
   Scenario Outline:TC01 DataTables Veri Girisi
     Given kullanici "dataTablesUrl" sayfasina properties ile gider
     Then kullanici sayfada tabloda new butonuna tiklar
+    Then kullanici 3 saniye bekler
     Then kullanici bilgileri girer "<name>","<lastname>","<position>","<office>","<extention>","<date>","<salary>"
     Then kullanici 2 saniye bekler
     Then kullanici create butonuna tiklar
     Then kullanici 2 saniye bekler
     Then kullanici Search bolumune girdigi "<name>" bilgisini girer
     Then kullanici 2 saniye bekler
+    Then kullanici "<name>" ile basarili giris yapildigini dogrular
+    And sayfayi kapatir
 
     Examples:
       | name   | lastname | position    | office  | extention | date       | salary  |

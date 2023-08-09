@@ -29,4 +29,6 @@ public class amazonStepDefinition {
     public void kullaniciAramaKutusundaSamsungAratir() {
         page.aramaKutusu.sendKeys("Samsung", Keys.ENTER);
     }
+
+
 }

@@ -15,10 +15,15 @@ public class DataTablePage {
 
     @FindBy(xpath = "//*[@id='DTE_Field_first_name']")
     public WebElement firstName;
+
     @FindBy(xpath = "//*[@class='btn']")
     public WebElement createButton;
-    @FindBy(xpath = "//*[@type='text']")
+
+    @FindBy(xpath = "//*[@type='search']")
     public WebElement search;
+
+    @FindBy(xpath = "(//*[@class='sorting_1'])[1]")
+    public WebElement searchVerify;
 
 
 }
