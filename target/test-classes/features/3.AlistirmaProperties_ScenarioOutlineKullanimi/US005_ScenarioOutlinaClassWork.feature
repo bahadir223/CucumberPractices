@@ -26,7 +26,6 @@ Feature: US167854_manager_login_test
     Then kullanici girisYap butonuna tiklar
     Then kullanici 2 saniye bekler
     Then kullanici basarili giris yapildigini dogrular
-    #And kullanici cikis yapar
     And sayfayi kapatir
     Examples:
       | emailAdres                    | sifre     |

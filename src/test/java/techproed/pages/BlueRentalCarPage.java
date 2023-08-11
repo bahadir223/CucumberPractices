@@ -27,6 +27,12 @@ public class BlueRentalCarPage {
     @FindBy(xpath = "//*[@class='ajs-button ajs-ok']")
     public WebElement ok;
 
+    @FindBy(xpath = "//*[@href='/profile']")
+    public WebElement profileButton;
+
+    @FindBy(xpath = "//em")
+    public WebElement profileMail;
+
 
 
 
